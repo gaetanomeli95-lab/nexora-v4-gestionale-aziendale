@@ -163,15 +163,15 @@ export default function Home() {
             const Icon = feature.icon
 
             return (
-              <Card key={feature.title} className="border-white/10 bg-white/5 text-white shadow-[0_24px_70px_-35px_rgba(15,23,42,0.9)] backdrop-blur-xl">
+              <Card key={feature.title} className="border-white/10 bg-slate-900/80 text-white shadow-[0_24px_70px_-35px_rgba(15,23,42,0.9)] backdrop-blur-xl supports-[backdrop-filter]:bg-slate-900/70">
                 <CardHeader>
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 text-blue-100">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-blue-500/25 to-purple-500/25 text-blue-100">
                     <Icon className="h-6 w-6" />
                   </div>
                   <CardTitle className="text-white">{feature.title}</CardTitle>
-                  <CardDescription className="text-slate-300">{feature.description}</CardDescription>
+                  <CardDescription className="text-slate-200">{feature.description}</CardDescription>
                 </CardHeader>
-                <CardContent className="text-sm font-medium text-slate-200">
+                <CardContent className="text-sm font-medium text-slate-100">
                   Ideale per demo commerciali, onboarding rapido e presentazione del valore del prodotto già dal sito pubblico.
                 </CardContent>
               </Card>
