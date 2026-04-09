@@ -1,5 +1,7 @@
 import { redirect } from 'next/navigation'
 
+const isPublicShowcaseDeployment = Boolean(process.env.VERCEL)
+
 export default function DashboardPage() {
-  redirect('/dashboard-real')
+  redirect(isPublicShowcaseDeployment ? '/auth/signin' : '/dashboard-real')
 }
