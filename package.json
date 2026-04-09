@@ -10,8 +10,9 @@
   "main": "electron/main.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
+    "postinstall": "prisma generate",
     "desktop": "npm run desktop:run:full",
     "desktop:run:demo": "node scripts/run-electron-desktop.cjs demo",
     "desktop:run:full": "node scripts/run-electron-desktop.cjs full",
